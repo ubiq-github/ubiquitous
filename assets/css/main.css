@@ -1021,6 +1021,7 @@ em,i {
 
 p {
   margin: 0 0 2em 0;
+  font-size: 1.25em;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1087,6 +1088,10 @@ hr.major {
 .inner {
   max-width: 75em;
   margin: 0 auto;
+}
+
+.inner header h1 {
+  text-align: left;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1465,7 +1470,7 @@ input[type="text"],input[type="password"],input[type="email"],input[type="tel"],
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: solid 2px #8dcca9;
   display: block;
   outline: 0;
@@ -1981,11 +1986,11 @@ table.alt tfoot {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 3px #6cc091;
 		color: #6cc091 !important;
-		border-radius: 30px;
+		/* border-radius: 30px; */
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-size: .75em;
+		font-size: 0.8em;
 		font-weight: 400;
 		height: 3.75em;
 		line-height: 3.85em;
@@ -2218,10 +2223,16 @@ table.alt tfoot {
   color: inherit;
   text-decoration: none;
   font-size: 1em;
+
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 #header a:hover {
   color: #ff7400;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #header a:last-child {
@@ -2378,7 +2389,7 @@ table.alt tfoot {
 /* Banner */
 
 #banner {
-  padding: 8em 0 15em 0;
+  padding: 8em 0 4em 0;
   background-size: cover;
   background: url(../../images/banner/Slow_Typer.jpg) no-repeat fixed bottom;
   text-align: center;
@@ -2400,7 +2411,7 @@ table.alt tfoot {
   border-top: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
   z-index: 10005;
-  padding-top: 8em;
+  padding-top: 4em;
 }
 
 #banner h1 {
@@ -2409,19 +2420,21 @@ table.alt tfoot {
   color: #fff;
   line-height: 1em;
   margin: 0 0 0.3em 0;
-  padding: 0;
+  padding: 0 0 1em 0;
+
+  animation: 1.5s ease-out 0s 1 fadeInFromLeft;
 }
 
 #banner h3 {
   font-weight: 400;
   color: #fff;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 #banner .icon {
   color: #6cc091;
-  font-size: 2.8em;
+  font-size: 5em;
 }
 
 #banner p {
@@ -2445,6 +2458,45 @@ table.alt tfoot {
   overflow: hidden;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 #banner .flex {
   -ms-flex-pack: center;
   -moz-justify-content: center;
@@ -2452,25 +2504,43 @@ table.alt tfoot {
   -ms-justify-content: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto 7em auto;
+  /* margin: 0 auto 7em auto; */
+  animation: 1.5s ease-out 0s 1 fadeInFromRight;
 }
 
 #banner .flex div {
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
-  padding: 0 8em;
+  /* border-right: 2px solid rgba(255, 255, 255, 0.2); */
+  /* border-radius: 50%; */
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  overflow: hidden;
+  padding: 1.5em !important; /* Change later */
+
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  
+  /* padding: 0 8em; */
+  /* justify-content: space-around; */
 }
 
-#banner .flex div:last-child {
+#banner .flex div:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* #banner .flex div:last-child {
   border: none;
   padding-right: 0;
 }
 
 #banner .flex div:first-child {
   padding-left: 0;
-}
+} */
 
 #banner .flex div p {
   margin: 0;
+  font-size: 1.25em;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {

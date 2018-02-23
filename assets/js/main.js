@@ -103,4 +103,8 @@
 		// Remove original image.
 			$img.remove();
 	});
+	
+	$(function() {
+		AOS.init();
+	  });
 })(jQuery);
