@@ -2950,3 +2950,27 @@ table.alt tfoot {
 a {
 	text-decoration: none;
 }
+
+nav {
+  display: inline;
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+
+nav ul li {
+  display: inline-block;
+}
+
+#header-logo {
+  content: url('../../images/ubiq_logo_x_dark.png');
+  width: 12.25em;
+  height: 3.25em;
+}
+
+.navbar-brand {
+  float: left;
+}
