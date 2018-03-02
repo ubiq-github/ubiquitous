@@ -2160,12 +2160,13 @@ table.alt tfoot {
 }
 
 .subpage #header {
-  background: #6cc091;
+  /* background: #6cc091; */
   top: 0;
   height: 44px;
   line-height: 44px;
   position: fixed;
   padding: 0.7em 0 3.2em 0;
+  /* padding: 0.7em 0 3.2em 0; */
 }
 
 #header {
@@ -2966,11 +2967,31 @@ nav ul li {
 }
 
 #header-logo {
-  content: url('../../images/ubiq_logo_x_dark.png');
+  content: url('../../images/ubiq_logo_x_small.png');
   width: 12.25em;
   height: 3.25em;
 }
 
 .navbar-brand {
   float: left;
+}
+
+.scroll-header {
+  background: white;
+  /* position: fixed;
+  top: 0;
+  height: 44px;
+  line-height: 44px;
+  position: fixed !important;
+  padding: 0.7em 0 3.2em 0; */
+}
+
+.scroll-header #header-logo {
+  content : url('../../images/ubiq_logo_x_light_small.png');
+}
+
+.scroll-header nav {
+  color: #555;
+  /* color: black; */
+  font-weight: bold;
 }

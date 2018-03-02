@@ -5,7 +5,6 @@ window.onload = function () {
     var sticky = navbar.offsetTop;
 
     window.onscroll = function() {
-        // console.log('Just keep scrolling');
         var scrollTop = document.documentElement.scrollTop 
                      || document.body.scrollTop;
 
