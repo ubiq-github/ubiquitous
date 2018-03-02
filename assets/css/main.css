@@ -2874,3 +2874,7 @@ table.alt tfoot {
 a {
 	text-decoration: none;
 }
+
+.company-cta {
+    text-align: left;
+}
