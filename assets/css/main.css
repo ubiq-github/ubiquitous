@@ -2156,16 +2156,18 @@ table.alt tfoot {
 /* Header */
 
 .subpage {
-  padding-top: 44px;
+/*  padding-top: 44px;*/
 }
 
 .subpage #header {
   /* background: #6cc091; */
   top: 0;
+/*
   height: 44px;
   line-height: 44px;
+*/
   position: fixed;
-  padding: 0.7em 0 3.2em 0;
+  padding: 0.7em 0 4em 0;
   /* padding: 0.7em 0 3.2em 0; */
 }
 
@@ -2181,10 +2183,10 @@ table.alt tfoot {
   width: 100%;
   z-index: 10006;
     
-  -moz-transition: background-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -ms-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #header .inner {
@@ -2971,6 +2973,11 @@ nav ul li {
   content: url('../../images/ubiq_logo_x_small.png');
   width: 12.25em;
   height: 3.25em;
+    
+  -moz-transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .navbar-brand {
@@ -2987,8 +2994,14 @@ nav ul li {
   padding: 0.7em 0 3.2em 0; */
 }
 
+.scroll-header a.navPanelToggle .fa {
+  color: #555;
+}
+
 .scroll-header #header-logo {
   content : url('../../images/ubiq_logo_x_light_small.png');
+    
+  transform: scale(0.9);
 }
 
 .scroll-header nav {
