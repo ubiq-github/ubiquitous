@@ -1606,6 +1606,7 @@ body,input,select,textarea {
 
 a {
   color: #6cc091;
+    
   text-decoration: underline;
 }
 
@@ -3002,9 +3003,10 @@ table.alt tfoot {
 
 #banner {
 /*  padding: 8em 0 15em 0;*/
-  padding: 8em 0 6em 0;
+  padding: 8em 0 8em 0;
   background-size: cover;
-  background: url(../../images/banner/Slow_Typer.jpg) no-repeat fixed bottom;
+/*  background: url(../../images/banner/Slow_Typer.jpg) no-repeat fixed bottom;*/
+    background: url("../../images/banner/banner-tech.jpeg") no-repeat fixed bottom;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -3012,7 +3014,8 @@ table.alt tfoot {
 
 #banner:before {
   content: '';
-  background: rgba(75, 75, 93, 0.85);
+/*  background: rgba(75, 75, 93, 0.85);*/
+  background: rgba(75, 75, 93, 0.50);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3035,7 +3038,7 @@ table.alt tfoot {
   margin: 0 0 0.3em 0;
   padding: 0 0 1em 0;
 
-  animation: 1.5s ease-out 0s 1 fadeInFromLeft;
+/*  animation: 1.5s ease-out 0s 1 fadeInFromLeft;*/
 }
 
 #banner h3 {
@@ -3118,7 +3121,7 @@ table.alt tfoot {
   justify-content: center;
   text-align: center;
   /* margin: 0 auto 7em auto; */
-  animation: 1.5s ease-out 0s 1 fadeInFromRight;
+/*  animation: 1.5s ease-out 0s 1 fadeInFromRight;*/
 }
 
 #banner .flex div {
@@ -3625,10 +3628,9 @@ nav ul li {
     
 }
 
-#banner .sub-cta {
-/*    font-weight: none;*/
-/*    font-size: 1.5em;*/
-    color:darkgray
+#services {
+    margin: 0 auto 0 auto;
+    width: 80%;
 }
 
 #services .flex {
@@ -3638,18 +3640,38 @@ nav ul li {
     -ms-justify-content: space-between;
     justify-content: space-between;
 /*    text-align: center;*/
-    margin: 0 auto 7em auto;
-/*    width: 60%;*/
 }
 
 #services .flex div {
-    margin: 0 2em 0 2em;
+/*    margin: 0 2em 0 2em;*/
     flex-basis: 0;
     flex-grow: 1;
+    
+    text-align: center;
+}
+
+#services .flex div p {
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    #services .flex {
+        display: block;
+    }
+}
+
+#services .flex div p {
+    font-size: 1.25em;
+    
+/*    color: #555;*/
+    color: black;
 }
 
 #services .flex div .icon {
-    font-size: 5em;
+    font-size: 4em;
+/*    color: #1c6a38;*/
+    color: #555;
+/*    color: #6cc091;*/
 }
 
 #products article {
@@ -3688,4 +3710,167 @@ nav ul li {
 
 #contact #three {
     padding: 0;
+}
+
+.inner .company-cta {
+    margin: auto;
+    width: 75%;
+}
+
+/*
+Color themes: ################################
+    Green: #6cc091
+    Orange: #ff7400
+    Black: #555
+
+    Foreground oval color: #1c6a38
+    Background oval color: #f07e1c
+*/
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.contact {
+    color: white;
+/*    background-color: #ff7400;*/
+    background-color: #f08e1c;
+    
+/*
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #ff7400;
+*/
+    
+    display: inline-block;
+    
+    padding: 0.5em 2em 0.5em 2em;
+    font-size: 1.5em;
+    
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    
+    
+}
+
+.section-divider {
+    margin: 0 0 4em 0;
+}
+
+.contact:hover {
+/*    background-color: #ffffff;*/
+/*    background-color: #6cc091;*/
+    background-color: #1c6a38;
+    
+/*    color: #555;*/
+/*    color: white;*/
+        
+/*    font-weight: bold;*/
+}
+
+#tagline {
+    padding: 4em 0 4em 0;
+    
+/*    background-color: #6cc091;*/
+    background-color: #1c6a38;
+/*    background-color: #f07e1c;*/
+    
+/*    font-style: italic;*/
+    text-align: center;
+}
+
+#tagline h1 {
+    margin: auto;
+    width: 50%;
+    
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2em;
+    color: white;
+}
+
+#tagline h1 strong {
+    font-size: 1.25em;
+    color: white;
+    
+}
+
+@media (max-width: 640px) {
+    #tagline h1 {
+        font-size: 1.5em;
+        width: 90%;
+    }
+}
+
+#company-intro {
+/*    margin: 3em auto 3em auto;*/
+    margin: 0 auto;
+    width: 80%;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#company-intro .flex {
+    display: flex;
+}
+
+@media (max-width: 640px) {
+    #company-intro {
+        width: 100%;
+    }
+}
+
+#company-intro h1 {
+    margin: 0 auto;
+    padding: 2em;
+    width: 80%;
+    
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#products {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#products header h1 {
+    font-size: 3em;
+}
+
+@media (max-width: 640px) {
+    #products header h1 {
+        font-size: 2em;
+    }
+}
+
+#contact-cta {
+    background: url("../../images/banner/contact.jpeg")  no-repeat fixed;
+    background-size: cover;
+    padding: 2.5em;
+}
+
+#contact-cta > div {
+    margin: 0 auto;
+    width: 80%;
+    
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    #contact-cta > div {
+        width: 100%;
+    }
+}
+
+#contact-cta h1 {
+    font-size: 2em;
+    color: white;
 }

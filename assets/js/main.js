@@ -107,4 +107,31 @@
 	$(function() {
 		AOS.init();
 	  });
+    
+    /* TODO */
+//    function getPosition(element) {
+//        var xPosition = 0;
+//        var yPosition = 0;
+//
+//        while(element) {
+//            xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+//            yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+//            element = element.offsetParent;
+//        }
+//
+//        return { x: xPosition, y: yPosition };
+//    }
+//
+//    var bannerContact = document.querySelectorAll('#banner .contact');
+//    var bannerContact = $('#banner .contact');
+//    console.log($(document).scrollTop() + $('#header').height());
+//    console.log($('#services').prop("scrollHeight") + $('#header').height());
+//    bannerContact.on('click', function (e) {
+//        if (document.scrollTop + document.height <= $('#services').prop("scrollHeight") + $('#header').height()) {
+//            $('html,body').animate({
+//                scrollTop: $('#services').prop("scrollHeight") + $('#header').height()
+//            }, 1250);
+//        }
+//    });
+    
 })(jQuery);
