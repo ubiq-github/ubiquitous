@@ -3909,6 +3909,13 @@ Color themes: ################################
     padding: 2.5em;
 }
 
+@media (max-width: 980px) {
+    #contact-cta {
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
+
 #contact-cta > div {
     margin: 0 auto;
     width: 80%;
