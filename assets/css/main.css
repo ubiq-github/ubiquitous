@@ -3605,7 +3605,7 @@ nav ul li {
   height: 3.25em;
 */
     
-    content: url("../../images/ubiq_logo_x_long_light.svg");
+    content: url("../../images/ubiq_logo_x_long_light.png");
 /*
     width: 12.25em;
     height: 3.25em;
@@ -3642,18 +3642,18 @@ nav ul li {
 
 .scroll-header #header-logo {
 /*  content : url('../../images/ubiq_logo_x_light_small.png');*/
-    content: url("../../images/ubiq_logo_x_long.svg");
+    content: url("../../images/ubiq_logo_x_long.png");
     
   transform: scale(0.9);
 }
 
 @media (max-width: 450px) {
     #header-logo {
-        content: url("../../images/ubiq_logo_x_light_small.svg");
+        content: url("../../images/ubiq_logo_x_small.png");
     }
     
     .scroll-header #header-logo {
-        content: url("../../images/ubiq_logo_x_small.svg");
+        content: url("../../images/ubiq_logo_x_light_small.png");
     }
 }
 
