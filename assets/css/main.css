@@ -2835,7 +2835,7 @@ table.alt tfoot {
   color: inherit;
   text-decoration: none;
   font-size: 1em;
-  border-radius: 10px;
+/*  border-radius: 10px;*/
 
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -2843,14 +2843,16 @@ table.alt tfoot {
   transition: background-color 0.2s ease-in-out;
 }
 
-#header a:hover {
+#header ul a:hover {
   color: #ff7400;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/*
 #header a:last-child {
   padding-right: 0;
 }
+*/
 
 #header a.navPanelToggle {
   display: none;
@@ -3648,6 +3650,15 @@ nav ul li {
     flex-grow: 1;
     
     text-align: center;
+    
+  -moz-transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+#services .flex div:hover {
+    transform: scale(1.1);
 }
 
 #services .flex div p {
