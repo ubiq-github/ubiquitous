@@ -3583,9 +3583,22 @@ nav ul li {
 }
 
 #header-logo {
+/*
   content: url('../../images/ubiq_logo_x_small.png');
   width: 12.25em;
   height: 3.25em;
+*/
+    
+    content: url("../../images/ubiq_logo_x_long_light.svg");
+/*
+    width: 12.25em;
+    height: 3.25em;
+*/
+/*    width: 22.1875em;*/
+/*    height: 3.25em;*/
+    left: 0;
+    top: 0;
+    position: absolute;
     
   -moz-transition: transform 0.5s ease-in-out;
   -webkit-transition: transform 0.5s ease-in-out;
@@ -3612,9 +3625,20 @@ nav ul li {
 }
 
 .scroll-header #header-logo {
-  content : url('../../images/ubiq_logo_x_light_small.png');
+/*  content : url('../../images/ubiq_logo_x_light_small.png');*/
+    content: url("../../images/ubiq_logo_x_long.svg");
     
   transform: scale(0.9);
+}
+
+@media (max-width: 450px) {
+    #header-logo {
+        content: url("../../images/ubiq_logo_x_light_small.svg");
+    }
+    
+    .scroll-header #header-logo {
+        content: url("../../images/ubiq_logo_x_small.svg");
+    }
 }
 
 .scroll-header nav {
@@ -3836,19 +3860,23 @@ Color themes: ################################
     display: flex;
 }
 
+#company-intro h1 {
+/*    margin: 0 auto;*/
+    padding: 2em;
+/*    width: 80%;*/
+    
+    text-align: center;
+    font-size: 1.25em;
+}
+
 @media (max-width: 640px) {
     #company-intro {
         width: 100%;
     }
-}
-
-#company-intro h1 {
-    margin: 0 auto;
-    padding: 2em;
-    width: 80%;
     
-    text-align: center;
-    font-size: 1.25em;
+    #company-intro h1 {
+        padding: 1.5em;
+    }
 }
 
 #products {
