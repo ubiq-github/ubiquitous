@@ -3689,6 +3689,15 @@ nav ul li {
     transform: scale(1.1);
 }
 
+#services .flex div:hover .icon {
+    color: #1c6a38;
+
+}
+
+#services .flex div:hover p {
+    color: #1c6a38;
+}
+
 #services .flex div p {
     margin: 0;
 }
